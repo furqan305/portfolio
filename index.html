@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="table.css">
 </head>
 <body>
-    
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Hero</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact-form">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <div class="main">
+            <h1 class="headings"> I Am <br>Muhammad Furqan</h1>
+            <a href="#contact-form"><button class="btn">Hire me</button></a>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="headings">About Me</h1>
+        <div id="pic">
+            <img src="./1122.jpg" alt="">
+            <div id="intro">
+                <h2>Muhammad Furqan</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, tempora natus, dicta rem explicabo molestias ad quidem atque excepturi repudiandae expedita, doloremque consectetur illum ipsa porro quo rerum incidunt error eius nulla. Perspiciatis illum veritatis accusantium. Ducimus distinctio, aliquid cupiditate rem nemo aspernatur commodi neque? Atque ipsa accusantium labore aliquid! Porro eligendi tempora deserunt ut? Impedit sed aliquam inventore, neque consequatur nulla voluptates? Accusamus eveniet nihil dolorem quod perspiciatis. Adipisci modi, ad maiores doloribus vitae libero. Quia assumenda saepe minima reiciendis nostrum dolores architecto. Odit consequuntur minus ipsum, ipsa enim consequatur obcaecati doloribus! Non ab impedit neque hic dolorum fuga! </p>
+            </div>
+        </div>
+
+    </section>
+        <section id="portfolio">
+            <h1 class="headings">PROJECTS</h1>
+            <div class="gallery">
+                <img src="./LOVELY (302).jpg" alt="">
+                <img src="./LOVELY (304).jpg" alt="">
+                <img src="./LOVELY (305).jpg" alt="">
+                <img src="./LOVELY (306).jpg" alt="">
+                <img src="./LOVELY (307).jpg" alt="">
+                <img src="./LOVELY (308).jpg" alt="">
+            </div>
+
+        </section>
+        <section id="services">
+            <h1 class="headings">SKILLS</h1>
+            <div class="row">
+                <div class="box">
+                    <h1 class="headings">HTML</h1>
+                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae laudantium perferendis necessitatibus, veritatis labore explicabo ab accusantium quibusdam similique fugit optio est ad ex? Harum aut veritatis hic facere saepe.</P>
+                </div>
+                <div class="box">
+                    <h1 class="headings">CSS</h1>
+                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae laudantium perferendis necessitatibus, veritatis labore explicabo ab accusantium quibusdam similique fugit optio est ad ex? Harum aut veritatis hic facere saepe.</P>
+                </div>
+                <div class="box">
+                    <h1 class="headings">JAVASCRIPT</h1>
+                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae laudantium perferendis necessitatibus, veritatis labore explicabo ab accusantium quibusdam similique fugit optio est ad ex? Harum aut veritatis hic facere saepe.</P>
+                </div>
+            </div>
+        </section>
+    <section class="contact-section">
+        <form id="contact-form" action="https://formspree.io/f/mjvdqznq" method="post" class="form-container">
+            <h1>Contact us</h1>
+            <div class="input">
+                Full name:<input type="text" name="Name" maxlength="30" class="form-section-inputs form-name" required />
+            </div>
+            <div class="input">
+                Your Email address:<input type="email" name="Email" class="form-section-inputs form-email" required />
+            </div>
+            <div class="input">
+                Write your massage here:
+                <textarea name="Message" cols="30" rows="6" maxlength="500" class="form-section-textarea"
+                    required></textarea>
+            </div>
+            <button type="submit" class="form-button">Get in touch</button>
+        </form>
+    </section>
+    </main>
+
+        
 </body>
+
 </html>
